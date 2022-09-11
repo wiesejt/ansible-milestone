@@ -1,0 +1,11 @@
+---
+test:
+  hosts:
+    milestone:
+      ansible_host: 192.168.1.19
+      ansible_user: Administrator
+      ansible_password: Pf3OkejUVW4
+      ansible_connection: winrm
+      ansible_port: 5986
+#     ansible_winrm_transport: basic
+      ansible_winrm_server_cert_validation: ignore

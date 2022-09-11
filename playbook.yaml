@@ -1,17 +1,15 @@
-- name: Run Updates on Terminal Servers then wait 7 mins
+---
+- name: update hosts
   hosts: all
-  gather_facts: yes
-  connection: winrm
+  gather_facts: false
 
   tasks:
-  - name: Window updates
-    win_updates:
-      category_names:
-        - Application
-        - CriticalUpdates
-        - DefinitionUpdates
-        - SecurityUpdates
-        - Updates
-    reboot: yes
-    reboot_timeout: 420
-    log_path: c:\tmp\updatelogs\
+    - name: Search and download Windows updates without installing
+      win_updates:
+        category_names:
+          - Application
+          - CriticalUpdates
+          - DefinitionUpdates
+          - SecurityUpdates
+          - Updates
+        log_path: c:\tmp\update.log
