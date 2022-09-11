@@ -1,8 +1,10 @@
 - name: Run Updates on Terminal Servers then wait 7 mins
   hosts: all
+  gather_facts: yes
   connection: winrm
 
   tasks:
+  - name: Window updates
     win_updates:
       category_names:
         - Application
@@ -12,4 +14,4 @@
         - Updates
     reboot: yes
     reboot_timeout: 420
-    log_path: c:/tmp/updatelogs
+    log_path: c:\tmp\updatelogs\
