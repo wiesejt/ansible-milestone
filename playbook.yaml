@@ -3,6 +3,9 @@
   hosts: all
   gather_facts: false
 
+  vars_files:
+    - vars.yml
+
   tasks:
     - name: Search and download Windows updates without installing
       win_updates:
