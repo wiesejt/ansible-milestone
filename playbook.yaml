@@ -1,6 +1,6 @@
 ---
 - name: update hosts
-  hosts: test
+  hosts: group1
   gather_facts: false
 
 
