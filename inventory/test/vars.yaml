@@ -1,0 +1,4 @@
+---
+ansible_host: 192.168.1.25
+ansible_user: Administrator
+ansible_password: Pf3OkejUVW4
