@@ -16,4 +16,4 @@
         log_path: c:\tmp\update.log
         reboot: yes
         reboot_timeout: 120
-#       server_selection: #Point to WSUS server
+#       server_selection: Point to WSUS server
