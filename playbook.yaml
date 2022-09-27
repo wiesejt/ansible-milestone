@@ -3,10 +3,6 @@
   hosts: test
   gather_facts: false
 
-  vars_files:
-#    - "{{ lookup('env' , 'PWD') + '/inventory/host_vars/milestone/vars.yaml'}}"
-#    - "{{ lookup('env' , 'PWD') + '/inventory/host_vars/test-windows1/vars.yaml'}}"
-#    - "{{ lookup('env' , 'PWD') + '/inventory/test/vars.yaml'}}"
 
   tasks:
     - name: Search and download Windows updates
